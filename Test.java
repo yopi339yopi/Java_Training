@@ -6,7 +6,7 @@
 */
 
 // ファイル名と同じクラス名
-public class Test11{  // クラス名の頭文字は大文字
+public class Test{  // クラス名の頭文字は大文字
   // プログラムは、「main」から実行される
   public static void main(String[] args) {  //{}に囲まれた範囲をブロックと呼ぶ
     // 標準出力
@@ -70,5 +70,24 @@ public class Test11{  // クラス名の頭文字は大文字
     「++」インクリメント  左辺の変数の値を、１増やす
     「--」デクリメント    左辺の変数の値を、１減らす
     */
+
+
+    //型変換
+    double b = 6.5;
+    System.out.println(b);
+    
+    int q = (int)b; // double型を「(int)」で、int型に変換
+    System.out.println(q);
+    /*
+    「キャスト」とも呼ばれる
+    大きな型を小さな型に変換する
+    */
+
+
+    // 文字列の結合
+    String st1 = "こんにちは。 ";
+    String st2 = "こんばんは。 ";
+    System.out.println(st1 + st2);  //「+」で、文字列を結合できる。
+
   }
 }

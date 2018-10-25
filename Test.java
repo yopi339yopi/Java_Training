@@ -87,7 +87,8 @@ public class Test{  // クラス名の頭文字は大文字
     // 文字列の結合
     String st1 = "こんにちは。 ";
     String st2 = "こんばんは。 ";
-    System.out.println(st1 + st2);  //「+」で、文字列の変数を結合できる。
-
+    String st3 = st1 + st2;   //「+」で、文字列の変数を結合できる。
+    System.out.println(st1 + st2);  // カッコの中でもOK
+    System.out.println(st3);
   }
 }

@@ -75,7 +75,7 @@ public class Test{  // クラス名の頭文字は大文字
     //型変換
     double b = 6.5;
     System.out.println(b);
-    
+
     int q = (int)b; // double型を「(int)」で、int型に変換
     System.out.println(q);
     /*
@@ -87,7 +87,7 @@ public class Test{  // クラス名の頭文字は大文字
     // 文字列の結合
     String st1 = "こんにちは。 ";
     String st2 = "こんばんは。 ";
-    System.out.println(st1 + st2);  //「+」で、文字列を結合できる。
+    System.out.println(st1 + st2);  //「+」で、文字列の変数を結合できる。
 
   }
 }

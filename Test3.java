@@ -13,29 +13,33 @@ public class Test3{
     3.命令文が実行された場合、後の処理を行う。
     */
 
-    for ( int i = 0; i < 5; i++){ // ** for文はここから
+
+    for ( int i = 0; i < 5; i++){        // for文の始まり
     // for (変数iに0を代入、iが5未満か判断、命令文が実行された後、iに1を足す)
       System.out.println("こんにちは");  // 命令文
-    } // ** ここまで
+    }                                    // for文の終わり
 
 
-    int sum = 0;  // 変数sumに0を代入
-    for (int i = 1; i <= 100; i++){ // ** for文はここから
+
+    int sum = 0;                         // 変数sumを宣言、0を代入
+    for (int i = 1; i <= 100; i++){      // for文の始まり
     // for (変数iに1を代入、iが100以下か判断、命令文が実行された後、iに1を足す)
-      sum += i; // 変数sumにiを足していく
+      sum += i;                          // 変数sumにiを足していく
       System.out.println("sumに " + i + " を足しました");
-    } // ** ここまで
-    System.out.println(sum);
+    }                                    // ** ここまで
+    System.out.println(sum);             // 合計値を出力
 
 
-    int num = 0;
-    for (int i = 1; i <= 100; i++){ // ** for文はここから
-      if (i % 2 == 0){
-        num += i;
+
+    int num = 0;                         // 変数numを宣言、0を代入
+    for (int i = 1; i <= 100; i++){      // for文の始まり
+      if (i % 2 == 0){                   // if文による条件分岐
+        num += i;                        // ifがtrueの時の命令文
         System.out.println("numに " + i + " を足しました");
       }
-    } // ** ここまで
-    System.out.println(num);
+    }                                    // for文の終わり
+    System.out.println(num);             // 合計値を出力
+
 
 
     /*

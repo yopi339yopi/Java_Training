@@ -36,11 +36,11 @@ public class Test2{
 
     */
 
-    if (age < 4){  // もし(if)、条件式がtrueならば
-      System.out.println("無料です。");  // 命令文を実行
-    }else if (age < 13){  // ifがfalseで、条件式がtrueならば
+    if (age < 4){                            // もし(if)、条件式がtrueならば
+      System.out.println("無料です。");      // 命令文を実行
+    }else if (age < 13){                     // ifがfalseで、条件式がtrueならば
       System.out.println("子供料金です。");  // 命令文を実行
-    }else{  // どの条件式もfalseならば
+    }else{                                   // どの条件式もfalseならば
       System.out.println("大人料金です。");  // 命令文を実行
     }
 
@@ -51,6 +51,7 @@ public class Test2{
 
     int age2 = 15 + (int)(Math.random()*10);
     String str = (age2 >= 20) ? "成人です。" : "未成年です。";
+    // (age2が、20以上か判断) ? trueの時の処理 : falseの時の処理
     System.out.println(age2 + "は、" + str);
 
 
@@ -71,19 +72,19 @@ public class Test2{
 
     int score = (int)(Math.random()*5);
 
-    switch (score){ // scoreの値を確認
-      case 1:   // score == 1 の場合
+    switch (score){                     // scoreの値を確認
+      case 1:                           // score == 1 の場合
         System.out.println("Morning");  // 命令文を実行
-        break;  // 処理の終了 switch文から抜ける
-      case 2:   // score == 2 の場合
-        System.out.println("Hello");  // 命令文を実行
-      case 3:   // score == 3、又は、case 2:にbreak文が無い為、score == 2 の場合
+        break;                          // 処理の終了 switch文から抜ける
+      case 2:                           // score == 2 の場合
+        System.out.println("Hello");    // 命令文を実行
+      case 3:  // score == 3、又は、case 2:にbreak文が無い為、score == 2 の場合
         System.out.println("Evening");
         break;
-      default:  // scoreの値が、1〜3以外の場合
+      default:                          // scoreの値が、1〜3以外の場合
         System.out.println("Bye");
-    }   // switchブロック
-    System.out.println(score);  // scoreの値に関わらずに実行
+    }                                   // switch文の終了
+    System.out.println(score);          // scoreの値に関わらずに実行
 
 
 

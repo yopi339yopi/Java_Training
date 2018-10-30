@@ -51,6 +51,7 @@ public class Test8{
     methodA(4);               // methodAの引数aに4を代入して実行
     methodB(10,4);            // methodBの引数startに10を、endに4を代入して実行
     methodB(5,0);             // methodBの引数startに5を、endに0を代入して実行
+    System.out.println(getRandomNumber());   // getRandomNumberメソッドを出力
     int sum = getSum(3, 5);   // getSumに引数を渡して、戻り値を変数sumに代入
     System.out.println(sum);
   }
@@ -84,6 +85,12 @@ public class Test8{
 
 
   // 戻り値ありメソッド
+  public static int getRandomNumber(){      // int型の値を返すメソッドを定義
+    return (int)(Math.random() * 100) + 1;  // 1~100の乱数を返す
+  }
+
+
+  // 戻り値・引数ありメソッド
   public static int getSum(int a, int b){   // int型の値を戻すメソッドを定義
     return a + b;                           // 引数aとbを足した値を戻す
   }

@@ -55,6 +55,7 @@ class Person {
   private String name;                // privateフィールド
   private int age;
 
+  // アクセッサ
   public void setName(String name){   // 名前を設定するメソッド
     this.name = name;
   }
@@ -84,6 +85,7 @@ class Robot {
     this.name = s;
   }
 
+  // アクセッサ
   public String getName(){            // 名前を参照するメソッド
     return this.name;
   }

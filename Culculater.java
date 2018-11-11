@@ -1,25 +1,18 @@
 import java.util.*;
 
 public class Culculater{
-  public static void main(String[] args) {
-    Scanner s = new Scanner(System.in);
+  static Scanner s = new Scanner(System.in);
 
+  public static void main(String[] args) {
+
+    double[] nums = new double[2];
     String[] calcs = {"+", "-", "*", "/", "%"};
     List<String> calc = Arrays.asList(calcs);
 
+
     System.out.println("計算機です。");
     System.out.println("数値を入力して、Enterを押してください");
-    double a = 0;
-    while(true){
-      try{
-        String x = s.next();
-        a += Double.parseDouble(x);
-        break;
-      } catch(NumberFormatException x){
-        System.out.println("数値ではありません。");
-        continue;
-      }
-    }
+    nums[0] = num();
 
 
     System.out.println("[+]:[-]:[*]:[/]:[%]のどれかを入力して、Enterを押して下さい");
@@ -36,26 +29,16 @@ public class Culculater{
     }
 
     System.out.println("数値を入力して、Enterを押してください");
-    double b = 0;
-    while(true){
-      try{
-        String y = s.next();
-        b += Double.parseDouble(y);
-        break;
-      } catch(NumberFormatException y){
-        System.out.println("数値ではありません。");
-        continue;
-      }
-    }
+    nums[1] = num();
 
     String sum = "";
 
     switch(c){
-      case 0: sum = String.valueOf(a + b); break;
-      case 1: sum = String.valueOf(a - b); break;
-      case 2: sum = String.valueOf(a * b); break;
-      case 3: sum = String.valueOf(a / b); break;
-      case 4: sum = String.valueOf(a % b); break;
+      case 0: sum = String.valueOf(nums[0] + nums[1]); break;
+      case 1: sum = String.valueOf(nums[0] - nums[1]); break;
+      case 2: sum = String.valueOf(nums[0] * nums[1]); break;
+      case 3: sum = String.valueOf(nums[0] / nums[1]); break;
+      case 4: sum = String.valueOf(nums[0] % nums[1]); break;
     }
 
     if (sum.matches("^.*\\.0+$")){
@@ -64,5 +47,20 @@ public class Culculater{
     }else{
       System.out.println("合計は: " + sum + " です。");
     }
+  }
+
+  public static double num(){
+    double z = 0;
+    while(true){
+      try{
+        String x = s.next();
+        z += Double.parseDouble(x);
+        break;
+      } catch(NumberFormatException e){
+        System.out.println("数値ではありません。");
+        continue;
+      }
+    }
+    return z;
   }
 }
